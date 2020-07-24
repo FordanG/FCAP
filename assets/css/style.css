@@ -1,0 +1,200 @@
+body {
+  background: #eeeeee;
+  font-family: "Open Sans", sans-serif;
+}
+
+section {
+  padding: 100px 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  font-size: 14px;
+  background: #fff;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-bottom: 1px solid #d6d6d6;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .navbar-nav a {
+  font-size: 96%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav a.active {
+  color: #f04f01 !important;
+  background: transparent !important;
+}
+
+.navbar .nav-item.open > a {
+  background: none !important;
+}
+.navbar .dropdown-menu {
+  border-radius: 1px;
+  border-color: #e5e5e5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.navbar .dropdown-menu a,
+.navbar .dropdown-menu a:active {
+  color: #777;
+  padding: 8px 20px;
+  font-size: 13px;
+  background: #fff;
+}
+.navbar .dropdown-menu a:hover,
+.navbar .dropdown-menu a:focus {
+  color: #333;
+  background: #f8f9fa;
+}
+@media (min-width: 992px) {
+  .form-inline .input-group .form-control {
+    width: 225px;
+  }
+}
+@media (max-width: 992px) {
+  .form-inline {
+    display: block;
+  }
+}
+
+/* Header Image */
+
+.header {
+  background-image: url(../img/Hero.jpg);
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 20%; */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* FCAP-Description */
+#fcap-information {
+  background-color: #f8f7d1;
+}
+
+/* Product Cards */
+
+.card-body.red-bg {
+  color: #aa0d0d;
+}
+
+.card-body.black-rice {
+  color: #403333;
+}
+
+.card-body.brown-rice {
+  color: #b0693a;
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: #f8f7d1;
+}
+h2 {
+  color: #000;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+  margin: 30px 0 60px;
+}
+h2::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 4px;
+  border-radius: 1px;
+  background: #1abc9c;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+}
+.carousel-inner {
+  margin-bottom: 70px;
+}
+.carousel .carousel-item {
+  color: #999;
+  overflow: hidden;
+  min-height: 120px;
+  font-size: 13px;
+}
+.carousel .media {
+  position: relative;
+  padding: 0 0 0 20px;
+}
+.carousel .media img {
+  width: 75px;
+  height: 75px;
+  display: block;
+  border-radius: 50%;
+}
+.carousel .testimonial-wrapper {
+  padding: 0 10px;
+}
+.carousel .testimonial {
+  color: #808080;
+  position: relative;
+  padding: 15px;
+  background: #f1f1f1;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+.carousel .testimonial::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  background: #f1f1f1;
+  border: 1px solid #efefef;
+  border-width: 0 0 1px 1px;
+  position: absolute;
+  bottom: -8px;
+  left: 46px;
+  transform: rotateZ(-46deg);
+}
+.carousel .star-rating li {
+  padding: 0 2px;
+}
+.carousel .star-rating i {
+  font-size: 16px;
+  color: #ffdc12;
+}
+.carousel .overview {
+  padding: 3px 0 0 15px;
+}
+.carousel .overview .details {
+  padding: 5px 0 8px;
+}
+.carousel .overview b {
+  text-transform: uppercase;
+  color: #1abc9c;
+}
+.carousel .carousel-indicators {
+  bottom: -70px;
+}
+.carousel-indicators li,
+.carousel-indicators li.active {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 1px 2px;
+  box-sizing: border-box;
+}
+.carousel-indicators li {
+  background: #e2e2e2;
+  border: 4px solid #fff;
+}
+.carousel-indicators li.active {
+  color: #fff;
+  background: #1abc9c;
+  border: 5px double;
+}
